@@ -1,4 +1,4 @@
-
+(function () {
 Parse.initialize("XZWlbVV725NFLOGnspDbqxAtv7AuUJ8riWoH5buT", "7TOOE2okGv0iC30UcmqfoPbDYcWUZesinXOMnjyD");
 
 //MODEL
@@ -273,3 +273,4 @@ ViewModelToDoList = Backbone.View.extend({
 
 });
 $('.tasks').html(toDoListViewCollection.render().el);
+})();
