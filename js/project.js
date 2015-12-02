@@ -32,6 +32,7 @@ ViewForms = Backbone.View.extend({
             success: function (res) {
                 for (var i in res)
                     toDoListCollection.add(res[i])
+                console.log('Render current tasks.')
             },
             error: function (er) {
                 console.log('Query error  ' + er.message)
