@@ -1,0 +1,53 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+
+    <title>My Parse App</title>
+    <meta name="description" content="My Parse App">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bellota" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/backbone.js"></script>
+    <script src="js/parse.js"></script>
+</head>
+
+<body>
+
+<div class="log-sub">
+    <div class="but">
+        <button id="log"><i class="fa fa-user fa-2x"></i> Log In</button>
+        <button id="sig">Sign Up <i class="fa fa-user-plus fa-2x"></i></button>
+    </div>
+</div>
+<center>
+    <div class="logout-div">
+        <button id="logout"><i class="fa fa-user-times fa-2x"></i> Log Out</button>
+    </div>
+    <div id="log-in">
+        <input id="login-name" placeholder="Username" type="text"><br>
+        <input id="login-password" placeholder="Password" type="password"><br>
+        <button id="login-submit">Log In</button>
+    </div>
+    <div id="sign-up">
+        <input id="sign-up-name" placeholder="Username" type="text"><br>
+        <input id="sign-up-password" placeholder="Password" type="password"><br>
+        <input id="email" placeholder="Email" type="email"><br>
+        <button id="sign-up-submit">Register</button>
+    </div>
+    <div class="form">
+        <form id="addTask">
+            <input type="text" id="task"><br>
+            <button id="submit"><i class="fa fa-pencil fa-lg"></i> Add Task</button>
+            <button class="button"><i class="fa fa-times fa-lg"></i> Clear</button>
+        </form>
+    </div>
+    <br>
+    <ul class="tasks">
+    </ul>
+</center>
+<script src="js/project.js"></script>
+
+</body>

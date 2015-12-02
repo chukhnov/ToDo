@@ -1,0 +1,97 @@
+
+input[type=checkbox]:checked + span.strike {
+    text-decoration: line-through;
+
+}
+
+li {
+    list-style: none;
+}
+
+#login-signup input, .form input, {
+    display: block;
+    margin: 1em auto;
+    border: none;
+    padding: .25em;
+    width: 90%;
+    text-align: center;
+}
+
+.but {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    background: url(img/logo.png) center no-repeat;
+}
+
+button {
+    font-family: 'BellotaRegular';
+    text-align: center;
+    border: solid 5px black;
+    padding: 10px;
+    margin: 0 5px 50px;
+
+}
+
+button:hover {
+    background-color: white;
+
+}
+
+#login-name, #login-password, #sign-up-name, #sign-up-password, #email, #task {
+    font-family: 'BellotaRegular';
+    text-align: center;
+    border: solid 5px black;
+    margin: 0 5px 20px;
+}
+
+input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    background: white;
+    margin: 0 15px;
+    box-shadow: -3px 3px 0 rgba(0, 0, 0, 2.5);
+}
+
+.share-button {
+    border: solid 4px black;
+    padding: 2px;
+    margin: 0 10px 10px;
+}
+
+ul {
+    font-family: 'BellotaRegular';
+
+}
+
+.fa-eye {
+    display: inline-block;
+    position: relative;
+}
+
+.fa-eye {
+    position: relative;
+}
+
+.fa-eye em {
+    display: none;
+}
+
+.fa-eye:hover em {
+    font-family: 'BellotaRegular';
+    font-style: normal;
+    display: block;
+    position: absolute;
+    background: #000;
+    color: #FFF;
+    padding: 3px 5px;
+    bottom: 22px;
+    right: -20px
+}
+
