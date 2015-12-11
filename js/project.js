@@ -1,4 +1,4 @@
-(function () {
+
     Parse.initialize("XZWlbVV725NFLOGnspDbqxAtv7AuUJ8riWoH5buT", "7TOOE2okGv0iC30UcmqfoPbDYcWUZesinXOMnjyD");
 
 //MODEL
@@ -168,7 +168,18 @@
 //VIEW
     ViewModelToDoList = Backbone.View.extend({
         tagName: 'li',
-        initialize: function () {
+    initialize: function () {
+            var task = this.model;
+            var li = this.el;
+            Hammer(this.el).on("swipe", function(){
+                $(li).addClass( "transit" );
+                li.addEventListener("transitionend", myFunction);
+                li.addEventListener("webkitTransitionEnd", myFunction);
+                function myFunction() {
+                    task.destroy()
+                }
+
+            });
             this.model.on('destroy', this.remove, this);
 
 
@@ -228,6 +239,7 @@
         }
 
 
+
     });
     var viewForms = new ViewForms({});
     $('.tasks').html(toDoListViewCollection.render().el);
@@ -277,4 +289,3 @@
     });
     var router = new MyRouter();
     Backbone.history.start();
-})();

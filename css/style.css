@@ -67,6 +67,8 @@ input[type=checkbox] {
 
 ul {
     font-family: 'BellotaRegular';
+    padding-left: 0;
+    margin: 0;
 
 }
 
@@ -94,4 +96,32 @@ ul {
     bottom: 22px;
     right: -20px
 }
+li{
+    /*width: 450px;*/
+    /*height: 41px;*/
+    max-height: 250px;
+    position: relative;
+    left: 0;
+    -webkit-transition: left 1s,  max-height 1.5s;
+    /*-moz-transition: margin 1.5s, height 2s;*/
+    /*-ms-transition: margin 1.5s, height 2s;*/
+    /*-o-transition: margin 1.5s, height 2s;*/
+    transition: left 1s,  max-height 1.5s;
 
+}
+.transit {
+    max-height: 0;
+    left: 100%;
+}
+/*.strike {*/
+    /*width: 340px;*/
+    /*/!*word-wrap: break-word;*!/*/
+/*}*/
+.container {
+    max-width: 350px;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    word-wrap: break-word;
+
+}
